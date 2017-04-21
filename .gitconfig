@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Rick van den Hof
+	email = rick@vandenhof.eu
+	signingKey = 12DABD8A
+[commit]
+	gpgsign = true
