@@ -2,7 +2,9 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Rick van den Hof
-	email = rick@vandenhof.eu
-	signingKey = 12DABD8A
+	email = r.hof@avisi.nl
+	signingKey = 5AA90265B89E1BBA!
 [commit]
 	gpgsign = true
+[core]
+	hooksPath = /Users/rick/Documents/Klanten/Avisi/git-hooks/hooks

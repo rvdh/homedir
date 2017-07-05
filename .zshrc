@@ -85,3 +85,6 @@ source ~/.gpg-agent-info
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 unsetopt share_history
+if which rbenv > /dev/null; then 
+    eval "$(rbenv init -)"; 
+fi
