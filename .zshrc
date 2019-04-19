@@ -73,8 +73,12 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-source ~/.gpg-agent-info
+export SSH_KEY_PATH="~/.ssh/rsa_id"
+#unset SSH_AGENT_PID
+#if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+#  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+#fi
+#eval "$(ssh-agent -s)"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -88,3 +92,16 @@ unsetopt share_history
 if which rbenv > /dev/null; then 
     eval "$(rbenv init -)"; 
 fi
+export PATH=$PATH:/Users/rick/Documents/Klanten/Avisi/ops-tools/bin
+export PATH=$PATH:/Users/rick/Documents/Klanten/Avisi/allez-ops-tools/bin
+alias tf=terraform
+eval "$(pyenv init -)"
+export HI_API=http://10.13.10.1:8000
+alias cat=bat
+alias bt="bastion-tunnel aps 1 10.31.1.11:8501 10.31.1.11:4647"
+alias btvpn="bastion-tunnel aps 1 10.222.2.23:8501 10.222.2.23:4647"
+eval "$(direnv hook zsh)"
+export DIRENV_LOG_FORMAT=
+
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH

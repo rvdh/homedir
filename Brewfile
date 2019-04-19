@@ -1,0 +1,36 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "ansible"
+brew "ansible-lint"
+brew "docker"
+brew "docker-compose"
+brew "dockutil"
+brew "mas"
+brew "node"
+brew "pwgen"
+brew "pyenv"
+brew "terraform"
+brew "zsh"
+cask "1password"
+cask "docker"
+cask "google-chrome"
+cask "gpg-suite"
+cask "hipchat"
+cask "intellij-idea-ce"
+cask "iterm2"
+cask "mysql-shell"
+cask "postico"
+cask "sequel-pro"
+cask "slack"
+cask "tunnelblick"
+cask "vagrant"
+cask "virtualbox"
+cask "virtualbox-extension-pack"
+cask "xquartz"
+mas "1Password", id: 443987910
+mas "Airmail 3", id: 918858936
+mas "Harvest", id: 506189836
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Numbers", id: 409203825
+mas "WhatsApp", id: 1147396723
